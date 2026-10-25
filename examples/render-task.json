@@ -1,0 +1,298 @@
+{
+  "schema_version": 1,
+  "assignment": {
+    "id": "synthetic-render-v1",
+    "title": "原创演示 · 公式与三类作图",
+    "course": "原创综合练习",
+    "kind": "homework"
+  },
+  "questions": [
+    {
+      "id": "force",
+      "number": 1,
+      "type": "calculation",
+      "stem": "光滑水平面上的物块质量为1 kg，受水平向右的恒力10 N。取g=10 m/s²。画受力图并求支持力和加速度。",
+      "source": {
+        "kind": "synthetic",
+        "complete": true,
+        "description": "本项目原创脱敏演示题；不是实际平台题目、教材摘录或学生作答。"
+      },
+      "solution": {
+        "final": {
+          "tex": "N=10\\,\\mathrm N,\\qquad \\vec a=10\\,\\hat{\\boldsymbol\\imath}\\,\\mathrm{m/s^2}"
+        },
+        "steps": [
+          {
+            "text": "取向右为x正向、向上为y正向。只考虑重力、支持力与外加水平力。"
+          },
+          {
+            "tex": "\\begin{aligned}\\sum F_y&=N-mg=0\\\\\\sum F_x&=ma_x=F\\\\a_x&=\\frac{10}{1}=10\\,\\mathrm{m/s^2}\\end{aligned}"
+          }
+        ],
+        "figures": [
+          {
+            "type": "force",
+            "origin": [
+              0,
+              0
+            ],
+            "body": "block",
+            "axes": true,
+            "forces": [
+              {
+                "label": "N",
+                "vector": [
+                  0,
+                  10
+                ]
+              },
+              {
+                "label": "mg",
+                "vector": [
+                  0,
+                  -10
+                ]
+              },
+              {
+                "label": "F",
+                "vector": [
+                  10,
+                  0
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      "review": {
+        "status": "verified",
+        "reviewer": "Codex synthetic-example mathematical cross-check",
+        "method": "分别列竖直与水平牛顿第二定律；独立代回N−mg=0、ma−F=0，单位N/kg=m/s²。",
+        "checks": {
+          "conditions": true,
+          "answer": true,
+          "symbols": true,
+          "units": true,
+          "language": true
+        }
+      },
+      "delivery": "image"
+    },
+    {
+      "id": "triangle",
+      "number": 2,
+      "type": "calculation",
+      "stem": "平面直角坐标以cm为单位，A(0,0)、B(4,0)、C(0,3)。画三角形，求BC长度与面积。",
+      "source": {
+        "kind": "synthetic",
+        "complete": true,
+        "description": "本项目原创脱敏演示题；不是实际平台题目、教材摘录或学生作答。"
+      },
+      "solution": {
+        "final": {
+          "tex": "BC=5\\,\\mathrm{cm},\\qquad S=6\\,\\mathrm{cm^2}"
+        },
+        "steps": [
+          {
+            "tex": "BC=\\sqrt{(4-0)^2+(0-3)^2}=5\\,\\mathrm{cm}"
+          },
+          {
+            "tex": "S=\\frac12\\left|\\det\\begin{pmatrix}4&0\\\\0&3\\end{pmatrix}\\right|=6\\,\\mathrm{cm^2}"
+          }
+        ],
+        "figures": [
+          {
+            "type": "geometry",
+            "points": {
+              "A": [
+                0,
+                0
+              ],
+              "B": [
+                4,
+                0
+              ],
+              "C": [
+                0,
+                3
+              ]
+            },
+            "segments": [
+              {
+                "start": "A",
+                "end": "B",
+                "label": "4 cm"
+              },
+              {
+                "start": "A",
+                "end": "C",
+                "label": "3 cm"
+              },
+              [
+                "B",
+                "C"
+              ]
+            ],
+            "arcs": [
+              {
+                "center": "A",
+                "radius": 0.45,
+                "start": 0,
+                "end": 90,
+                "label": "90°"
+              }
+            ]
+          }
+        ]
+      },
+      "review": {
+        "status": "verified",
+        "reviewer": "Codex synthetic-example mathematical cross-check",
+        "method": "勾股定理与坐标距离公式各得5；底乘高和二维行列式法各得面积6。",
+        "checks": {
+          "conditions": true,
+          "answer": true,
+          "symbols": true,
+          "units": true,
+          "language": true
+        }
+      },
+      "delivery": "image"
+    },
+    {
+      "id": "sine",
+      "number": 3,
+      "type": "calculation",
+      "stem": "在闭区间[−π,π]上画y=sin x，写出零点与值域，并计算该区间上的定积分。角度以弧度计。",
+      "source": {
+        "kind": "synthetic",
+        "complete": true,
+        "description": "本项目原创脱敏演示题；不是实际平台题目、教材摘录或学生作答。"
+      },
+      "solution": {
+        "final": {
+          "tex": "x\\in\\{-\\pi,0,\\pi\\},\\qquad y\\in[-1,1],\\qquad\\int_{-\\pi}^{\\pi}\\sin x\\,dx=0"
+        },
+        "steps": [
+          {
+            "text": "定义域限定为闭区间[−π,π]，两个端点都属于定义域。"
+          },
+          {
+            "tex": "\\sin x=0\\iff x=k\\pi,\\qquad -\\pi\\le x\\le\\pi"
+          },
+          {
+            "tex": "\\int_{-\\pi}^{\\pi}\\sin x\\,dx=[-\\cos x]_{-\\pi}^{\\pi}=0"
+          }
+        ],
+        "figures": [
+          {
+            "type": "function",
+            "expression": "sin(x)",
+            "x_range": [
+              -3.141592653589793,
+              3.141592653589793
+            ],
+            "y_range": [
+              -1.4,
+              1.4
+            ]
+          }
+        ]
+      },
+      "review": {
+        "status": "verified",
+        "reviewer": "Codex synthetic-example mathematical cross-check",
+        "method": "逐个代回三个零点并检查端点；±π/2达到值域上下界；原函数代入与奇函数对称性均给出积分0。",
+        "checks": {
+          "conditions": true,
+          "answer": true,
+          "symbols": true,
+          "units": true,
+          "language": true
+        }
+      },
+      "delivery": "image"
+    },
+    {
+      "id": "calculus",
+      "number": 4,
+      "type": "calculation",
+      "stem": "实函数f(x)=√(1+x²)。说明定义域、求导数与积分∫₀¹x/√(1+x²) dx。\n另对实参数曲线r(t)=(t,t²)求速度矢量。",
+      "source": {
+        "kind": "synthetic",
+        "complete": true,
+        "description": "本项目原创脱敏演示题；不是实际平台题目、教材摘录或学生作答。"
+      },
+      "solution": {
+        "final": {
+          "tex": "D_f=\\mathbb R,\\quad f'(x)=\\frac{x}{\\sqrt{1+x^2}},\\quad I=\\sqrt2-1,\\quad\\vec v(t)=\\begin{pmatrix}1\\\\2t\\end{pmatrix},\\ t\\in\\mathbb R"
+        },
+        "steps": [
+          {
+            "text": "1+x²始终大于零，根式与分母均有定义，故定义域为全体实数。"
+          },
+          {
+            "tex": "\\begin{aligned}f'(x)&=\\frac{2x}{2\\sqrt{1+x^2}}\\\\I&=\\int_0^1\\frac{x}{\\sqrt{1+x^2}}\\,dx=\\left[\\sqrt{1+x^2}\\right]_0^1=\\sqrt2-1\\end{aligned}"
+          },
+          {
+            "tex": "\\vec v(t)=\\frac{d\\vec r}{dt}=\\begin{pmatrix}\\frac{d}{dt}t\\\\\\frac{d}{dt}t^2\\end{pmatrix}=\\begin{pmatrix}1\\\\2t\\end{pmatrix}"
+          }
+        ]
+      },
+      "review": {
+        "status": "verified",
+        "reviewer": "Codex synthetic-example mathematical cross-check",
+        "method": "SymPy独立求导和精确积分与书面链式法则结果一致；两坐标分别求导；检查1+x²≥1排除分母零点。",
+        "checks": {
+          "conditions": true,
+          "answer": true,
+          "symbols": true,
+          "units": true,
+          "language": true
+        }
+      },
+      "delivery": "image"
+    },
+    {
+      "id": "matrix-piecewise",
+      "number": 5,
+      "type": "calculation",
+      "stem": "M=[[1,2],[0,3]]。求det M和M的逆矩阵。另设g(x)在x≥0时为x²、在x<0时为−x，说明定义域以及0处的连续性、可导性。",
+      "source": {
+        "kind": "synthetic",
+        "complete": true,
+        "description": "本项目原创脱敏演示题；不是实际平台题目、教材摘录或学生作答。"
+      },
+      "solution": {
+        "final": {
+          "text": "det M=3，逆矩阵如下。g的定义域为全体实数，在0处连续，但左右导数分别为−1与0，因此不可导。",
+          "tex": "M^{-1}=\\begin{pmatrix}1&-\\frac23\\\\0&\\frac13\\end{pmatrix},\\qquad D_g=\\mathbb R"
+        },
+        "steps": [
+          {
+            "tex": "M=\\begin{pmatrix}1&2\\\\0&3\\end{pmatrix},\\quad\\det M=3,\\quad MM^{-1}=M^{-1}M=I_2"
+          },
+          {
+            "tex": "g(x)=\\begin{cases}x^2,&x\\ge0\\\\-x,&x<0\\end{cases}"
+          },
+          {
+            "tex": "\\begin{aligned}g(0)&=0=\\lim_{x\\to0^-}g(x)=\\lim_{x\\to0^+}g(x)\\\\g'_-(0)&=-1,\\qquad g'_+(0)=0\\end{aligned}"
+          }
+        ]
+      },
+      "review": {
+        "status": "verified",
+        "reviewer": "Codex synthetic-example mathematical cross-check",
+        "method": "SymPy求逆并以双向矩阵乘法验证单位阵；分段区间覆盖全体实数；左右函数极限均0，差商极限分别−1与0。",
+        "checks": {
+          "conditions": true,
+          "answer": true,
+          "symbols": true,
+          "units": true,
+          "language": true
+        }
+      },
+      "delivery": "image"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+.venv/
+node_modules/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+tmp/
+.env
+.env.*
+runs/
+output/
+outputs/
+private/
+*.token
+*.cookie
+*.log

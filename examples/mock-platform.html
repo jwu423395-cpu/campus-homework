@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Campus Homework — 本地模拟作业</title>
+<style>
+body{font:18px system-ui,sans-serif;max-width:920px;margin:32px auto;padding:0 24px;background:#f4f6fa;color:#1c2638}fieldset{background:white;border:1px solid #cad2df;border-radius:8px;margin:20px 0;padding:22px}legend{font-weight:700}label{display:block;margin:12px 0}textarea{box-sizing:border-box;width:100%;min-height:140px;font:inherit}button{font:inherit;padding:8px 18px;margin:8px 10px 8px 0}#status{padding:16px;background:#e4efff}svg{display:block;max-width:100%}.notice{font-size:15px;color:#46566e}
+</style>
+<h1>本地混合题模拟页面</h1>
+<p class="notice">虚构课程：基础物理练习 · 虚构作业：混合题演练。无账户、无网络请求、无真实成绩。保存和提交仅改变本页面状态。</p>
+<form id="homework">
+<fieldset><legend>1. 单选题</legend><p>质点沿半径 R = 0.5 m 的圆运动，弧坐标 s = 0.5t³ m。t = 1 s 时合加速度大小最接近哪个值？</p>
+<label><input type="radio" name="q1" value="A"> A. 7.500 m/s²</label><label><input type="radio" name="q1" value="B"> B. 5.408 m/s²</label><label><input type="radio" name="q1" value="C"> C. 3.000 m/s²</label><label><input type="radio" name="q1" value="D"> D. 4.500 m/s²</label></fieldset>
+<fieldset><legend>2. 多选题</legend><p>理想简谐振动中，以下陈述哪些正确？</p><label><input type="checkbox" name="q2" value="A"> A. a = −ω²x</label><label><input type="checkbox" name="q2" value="B"> B. 平衡位置速率最大</label><label><input type="checkbox" name="q2" value="C"> C. 加速度始终为零</label></fieldset>
+<fieldset><legend>3. 填空题</legend><label>角频率为 ω 的简谐振动周期 T = <input name="q3" aria-label="第3题周期" autocomplete="off"></label></fieldset>
+<fieldset><legend>4. 计算简答与附图</legend><p>用图中正方向说明圆周运动的切向、法向加速度，并写出第1题的计算过程。图仅用于局部坐标和截图验证。</p>
+<svg viewBox="0 0 360 210" width="360" height="210" role="img" aria-label="圆周运动示意图，圆心O，右侧点M，法向朝左，切向朝上"><defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L6,3 L0,6" fill="none" stroke="currentColor"/></marker></defs><circle cx="155" cy="110" r="75" fill="none" stroke="#30425c" stroke-width="2"/><circle cx="230" cy="110" r="4"/><text x="145" y="117">O</text><text x="240" y="118">M</text><path d="M230 110 L165 110 M230 110 L230 35" fill="none" stroke="#30425c" stroke-width="2" marker-end="url(#arrow)"/><text x="185" y="99">aₙ</text><text x="239" y="48">aτ</text></svg>
+<label>第4题答案<textarea name="q4" id="answer" aria-label="第4题答案"></textarea></label>
+<label>上传本地手写风格答案图<input name="attachment" id="attachment" type="file" accept="image/png,image/jpeg"></label><output id="attachment-status">尚未选择附件</output></fieldset>
+<button type="button" id="save">保存</button><button type="submit">提交本地模拟作业</button>
+</form><p id="status" role="status">状态：未保存</p>
+<script>
+const status = document.querySelector('#status');
+document.querySelector('#save').onclick = () => { status.textContent = '状态：保存成功（仅当前模拟页面，尚未提交）'; };
+document.querySelector('#attachment').onchange = event => { document.querySelector('#attachment-status').textContent = event.target.files.length ? '已选择附件：' + event.target.files[0].name : '尚未选择附件'; };
+document.querySelector('#homework').onsubmit = event => { event.preventDefault(); if (confirm('提交这份本地模拟作业？此操作不涉及真实平台。')) status.textContent = '状态：提交成功（本地模拟）· ' + new Date().toISOString(); };
+</script>
+</html>

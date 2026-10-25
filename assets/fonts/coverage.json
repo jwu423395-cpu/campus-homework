@@ -1,0 +1,40 @@
+{
+  "method": "fontTools TTFont.getBestCmap; GB2312 Hanzi decoded from byte rows B0-F7",
+  "sample": "大学物理简谐振动波长频率势能动能计算证明实验测量质量绳子图像学习通答案。繁體中文測試：學習與振動。",
+  "fallback": "wenkai",
+  "fonts": {
+    "wenkai": {
+      "mapped_codepoints": 46926,
+      "font_family": "LXGW WenKai",
+      "font_subfamily": "Regular",
+      "font_version": "Version 1.530; October 18, 2026",
+      "missing_sample": "",
+      "gb2312_hanzi_total": 6763,
+      "gb2312_hanzi_present": 6763,
+      "gb2312_missing_examples": "",
+      "license_sha256": "1a25e35da1031c6c3436fde545bb9cb5aca954e9873afe510c834b8b79bd21a0"
+    },
+    "yozai": {
+      "mapped_codepoints": 26006,
+      "font_family": "Yozai",
+      "font_subfamily": "Regular",
+      "font_version": "Version 0.868;September 12, 2025",
+      "missing_sample": "",
+      "gb2312_hanzi_total": 6763,
+      "gb2312_hanzi_present": 6763,
+      "gb2312_missing_examples": "",
+      "license_sha256": "86b3a0b5162848503241d80ea9a309a6459690ba7dc547940758a6a689a53b02"
+    },
+    "chenyu": {
+      "mapped_codepoints": 10137,
+      "font_family": "ChenYuluoyan 2.0 Thin",
+      "font_subfamily": "Regular",
+      "font_version": "Version 2.100",
+      "missing_sample": "简谐动长频势计证实验测质绳图习",
+      "gb2312_hanzi_total": 6763,
+      "gb2312_hanzi_present": 4333,
+      "gb2312_missing_examples": "丌专业丛东丝丢两严丧丬临为丽举乇义乌乐乔习乡书买亏亚产亩亲亵亿仅仑仓仪仫们伛伞伟传伢伤伥伦伧伪伫伲佤佥侣侥侦侧侨侩侪侬俅俜俦俨俩俪俭倮债倾偬偻偾偿傈傥傧储傩傺僬",
+      "license_sha256": "393732512d2658fa5841dfaad325e002ccb6755b9037a818500434c0a5c4a6d1"
+    }
+  }
+}

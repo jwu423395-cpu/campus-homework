@@ -1,0 +1,275 @@
+{
+  "schema_version": 1,
+  "assignment": {
+    "id": "synthetic-mixed-v1",
+    "title": "原创脱敏题单 · 六类题型",
+    "course": "原创综合练习",
+    "kind": "homework"
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "number": 1,
+      "type": "single",
+      "stem": "解方程 2x−3=7，x 等于多少？",
+      "source": {
+        "kind": "synthetic",
+        "complete": true,
+        "description": "本项目原创脱敏演示题；不是实际平台题目、教材摘录或学生作答。"
+      },
+      "solution": {
+        "final": {
+          "option_ids": [
+            "x-is-five"
+          ]
+        },
+        "steps": [
+          {
+            "text": "移项得2x=10，再除以2，得x=5。"
+          }
+        ]
+      },
+      "review": {
+        "status": "verified",
+        "reviewer": "Codex synthetic-example mathematical cross-check",
+        "method": "SymPy solve得到5；代回2×5−3=7。选项按内容ID映射，不沿用字母。",
+        "checks": {
+          "conditions": true,
+          "answer": true,
+          "symbols": true,
+          "units": true,
+          "language": true
+        }
+      },
+      "options": [
+        {
+          "id": "x-is-two",
+          "label": "A",
+          "text": "x=2"
+        },
+        {
+          "id": "x-is-five",
+          "label": "B",
+          "text": "x=5"
+        },
+        {
+          "id": "x-is-seven",
+          "label": "C",
+          "text": "x=7"
+        },
+        {
+          "id": "x-is-negative-five",
+          "label": "D",
+          "text": "x=−5"
+        }
+      ]
+    },
+    {
+      "id": "q2",
+      "number": 2,
+      "type": "multiple",
+      "stem": "设实函数f(x)=x²，定义域为全体实数。以下哪些说法正确？",
+      "source": {
+        "kind": "synthetic",
+        "complete": true,
+        "description": "本项目原创脱敏演示题；不是实际平台题目、教材摘录或学生作答。"
+      },
+      "solution": {
+        "final": {
+          "option_ids": [
+            "derivative",
+            "even",
+            "nonnegative"
+          ]
+        },
+        "steps": [
+          {
+            "text": "导数为2x；f(−x)=f(x)，且平方非负。取−2<−1但4>1，可否定全域严格递增。"
+          }
+        ]
+      },
+      "review": {
+        "status": "verified",
+        "reviewer": "Codex synthetic-example mathematical cross-check",
+        "method": "符号求导与奇偶恒等式展开核验；用−2、−1构造递增说法的反例；平方非负按实数平方定义核对。",
+        "checks": {
+          "conditions": true,
+          "answer": true,
+          "symbols": true,
+          "units": true,
+          "language": true
+        }
+      },
+      "options": [
+        {
+          "id": "derivative",
+          "label": "A",
+          "text": "f'(x)=2x"
+        },
+        {
+          "id": "increasing",
+          "label": "B",
+          "text": "在整个实数域严格递增"
+        },
+        {
+          "id": "even",
+          "label": "C",
+          "text": "f是偶函数"
+        },
+        {
+          "id": "nonnegative",
+          "label": "D",
+          "text": "对所有实数x均有f(x)≥0"
+        }
+      ]
+    },
+    {
+      "id": "q3",
+      "number": 3,
+      "type": "judgment",
+      "stem": "匀速圆周运动的速率恒定，因此其加速度恒为零。",
+      "source": {
+        "kind": "synthetic",
+        "complete": true,
+        "description": "本项目原创脱敏演示题；不是实际平台题目、教材摘录或学生作答。"
+      },
+      "solution": {
+        "final": {
+          "value": false
+        },
+        "steps": [
+          {
+            "text": "速率恒定不代表速度矢量恒定，向心加速度大小为v²/r。"
+          }
+        ]
+      },
+      "review": {
+        "status": "verified",
+        "reviewer": "Codex synthetic-example mathematical cross-check",
+        "method": "对非零速率和有限半径取v=2 m/s、r=2 m，向心加速度2 m/s²构成反例；核对速度方向随时间变化。",
+        "checks": {
+          "conditions": true,
+          "answer": true,
+          "symbols": true,
+          "units": true,
+          "language": true
+        }
+      }
+    },
+    {
+      "id": "q4",
+      "number": 4,
+      "type": "fill",
+      "stem": "长方形的长为4 m、宽为3 m，其面积为____，周长为____。请按空格顺序填写并带单位。",
+      "source": {
+        "kind": "synthetic",
+        "complete": true,
+        "description": "本项目原创脱敏演示题；不是实际平台题目、教材摘录或学生作答。"
+      },
+      "solution": {
+        "final": {
+          "values": [
+            "12 m^2",
+            "14 m"
+          ]
+        },
+        "steps": [
+          {
+            "text": "面积为4×3=12平方米；周长为2×(4+3)=14米。"
+          }
+        ]
+      },
+      "review": {
+        "status": "verified",
+        "reviewer": "Codex synthetic-example mathematical cross-check",
+        "method": "整数乘法和加法分别计算12与14；面积量纲为长度平方，周长量纲为长度；顺序与两空一致。",
+        "checks": {
+          "conditions": true,
+          "answer": true,
+          "symbols": true,
+          "units": true,
+          "language": true
+        }
+      },
+      "blank_count": 2
+    },
+    {
+      "id": "q5",
+      "number": 5,
+      "type": "calculation",
+      "stem": "质量1.5 kg的物块在光滑水平面上由静止开始，受恒定水平力6 N作用3 s。求加速度、末速度及位移。",
+      "source": {
+        "kind": "synthetic",
+        "complete": true,
+        "description": "本项目原创脱敏演示题；不是实际平台题目、教材摘录或学生作答。"
+      },
+      "solution": {
+        "final": {
+          "tex": "a=4\\,\\mathrm{m/s^2},\\quad v=12\\,\\mathrm{m/s},\\quad s=18\\,\\mathrm m"
+        },
+        "steps": [
+          {
+            "text": "以受力方向为正方向，竖直方向重力与支持力平衡。"
+          },
+          {
+            "tex": "a=\\frac{F}{m}=4\\,\\mathrm{m/s^2}"
+          },
+          {
+            "tex": "v=at=12\\,\\mathrm{m/s},\\qquad s=\\frac12at^2=18\\,\\mathrm m"
+          },
+          {
+            "text": "再用功与动能关系核对：6×18=1.5×12²/2=108 J。"
+          }
+        ]
+      },
+      "review": {
+        "status": "verified",
+        "reviewer": "Codex synthetic-example mathematical cross-check",
+        "method": "以精确有理数独立积分a得到v=12、积分v(t)得到s=18，再用功动能定理核对108 J；逐项核对SI单位。",
+        "checks": {
+          "conditions": true,
+          "answer": true,
+          "symbols": true,
+          "units": true,
+          "language": true
+        }
+      }
+    },
+    {
+      "id": "q6",
+      "number": 6,
+      "type": "short",
+      "stem": "理想弹簧振子以平衡位置为势能零点。为什么它经过平衡位置时速率最大？",
+      "source": {
+        "kind": "synthetic",
+        "complete": true,
+        "description": "本项目原创脱敏演示题；不是实际平台题目、教材摘录或学生作答。"
+      },
+      "solution": {
+        "final": {
+          "text": "总机械能守恒。平衡位置的弹性势能最小且为零，动能因此最大；质量不变时，速率也最大。"
+        },
+        "steps": [
+          {
+            "tex": "E=\\frac12kA^2,\\quad E_p=\\frac12kx^2,\\quad E_k=\\frac12k(A^2-x^2)"
+          },
+          {
+            "text": "在允许区间−A≤x≤A内，x²在x=0处最小，故动能在平衡位置最大。"
+          }
+        ]
+      },
+      "review": {
+        "status": "verified",
+        "reviewer": "Codex synthetic-example mathematical cross-check",
+        "method": "符号展开验证Ep+Ek=kA²/2恒等于总能量；在|x|≤A内由x²≥0确定Ek的最大值。",
+        "checks": {
+          "conditions": true,
+          "answer": true,
+          "symbols": true,
+          "units": true,
+          "language": true
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+{
+  "schema_version": 1,
+  "assignment": {
+    "id": "synthetic-workbook-v1",
+    "title": "原创练习册 · 原第7页",
+    "course": "原创综合练习",
+    "kind": "homework"
+  },
+  "questions": [
+    {
+      "id": "w1",
+      "number": 1,
+      "type": "calculation",
+      "stem": "直角三角形的两条直角边分别为3 cm与4 cm。求斜边及面积。",
+      "source": {
+        "kind": "synthetic",
+        "complete": true,
+        "description": "本项目原创脱敏演示题；不是实际平台题目、教材摘录或学生作答。",
+        "page": 7,
+        "evidence_path": "workbook-source.png"
+      },
+      "solution": {
+        "final": {
+          "text": "斜边为5 cm，面积为6 cm²。"
+        },
+        "steps": [
+          {
+            "tex": "c=\\sqrt{3^2+4^2}=5\\,\\mathrm{cm},\\qquad S=\\frac12\\cdot3\\cdot4=6\\,\\mathrm{cm^2}"
+          }
+        ]
+      },
+      "review": {
+        "status": "verified",
+        "reviewer": "Codex synthetic-example mathematical cross-check",
+        "method": "坐标距离法与勾股公式得5；底乘高面积6，量纲分别cm与cm²。",
+        "checks": {
+          "conditions": true,
+          "answer": true,
+          "symbols": true,
+          "units": true,
+          "language": true
+        }
+      },
+      "delivery": "image"
+    },
+    {
+      "id": "w2",
+      "number": 2,
+      "type": "calculation",
+      "stem": "光滑水平面上质量2 kg的物块，由静止开始受水平恒力6 N作用4 s。求加速度、末速度、位移，并用功与动能核对。",
+      "source": {
+        "kind": "synthetic",
+        "complete": true,
+        "description": "本项目原创脱敏演示题；不是实际平台题目、教材摘录或学生作答。",
+        "page": 7,
+        "evidence_path": "workbook-source.png"
+      },
+      "solution": {
+        "final": {
+          "tex": "a=3\\,\\mathrm{m/s^2},\\quad v=12\\,\\mathrm{m/s},\\quad s=24\\,\\mathrm m,\\quad W=144\\,\\mathrm J"
+        },
+        "steps": [
+          {
+            "text": "取恒力方向为正；竖直方向重力与支持力平衡。"
+          },
+          {
+            "tex": "a=\\frac Fm=\\frac62=3\\,\\mathrm{m/s^2}"
+          },
+          {
+            "tex": "v=v_0+at=0+3\\times4=12\\,\\mathrm{m/s}"
+          },
+          {
+            "tex": "s=v_0t+\\frac12at^2=\\frac12\\times3\\times4^2=24\\,\\mathrm m"
+          },
+          {
+            "text": "以平均速度法独立复算位移：(0+12)×4/2=24 m。"
+          },
+          {
+            "tex": "W=Fs=6\\times24=144\\,\\mathrm J=\\frac12mv^2-0"
+          },
+          {
+            "text": "两个方法所得位移一致，且外力做功等于动能增加。"
+          }
+        ]
+      },
+      "review": {
+        "status": "verified",
+        "reviewer": "Codex synthetic-example mathematical cross-check",
+        "method": "精确有理数计算a=3、v=12、s=24；独立平均速度法得到24；功6×24与动能2×12²/2均144 J。",
+        "checks": {
+          "conditions": true,
+          "answer": true,
+          "symbols": true,
+          "units": true,
+          "language": true
+        }
+      },
+      "delivery": "image"
+    }
+  ],
+  "workbook": {
+    "pages": [
+      {
+        "image": "workbook-source.png",
+        "page_number": 7,
+        "regions": [
+          {
+            "question_id": "w1",
+            "box": [
+              75,
+              640,
+              1050,
+              365
+            ]
+          },
+          {
+            "question_id": "w2",
+            "box": [
+              75,
+              1360,
+              1050,
+              95
+            ]
+          }
+        ],
+        "protected_boxes": [
+          [
+            0,
+            0,
+            1200,
+            625
+          ],
+          [
+            0,
+            1020,
+            1200,
+            330
+          ],
+          [
+            0,
+            1475,
+            1200,
+            225
+          ]
+        ]
+      }
+    ]
+  }
+}
